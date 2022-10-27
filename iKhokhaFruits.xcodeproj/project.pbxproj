@@ -10,6 +10,9 @@
 		051005BA13415D06D48942CB /* Pods_iKhokhaFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */; };
 		06D9EFFCBC25B037D850DF0F /* Pods_iKhokhaFruits_iKhokhaFruitsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903A7D75CF054D0A76649753 /* Pods_iKhokhaFruits_iKhokhaFruitsUITests.framework */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
+		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
+		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
+		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
 		CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565AA2909A4F800C47028 /* AppDelegate.swift */; };
 		CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565AE2909A4F800C47028 /* ViewController.swift */; };
 		CEB565B22909A4F800C47028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB565B02909A4F800C47028 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		9EF4A31708B223125E66400E /* Pods-iKhokhaFruitsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruitsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99D089B99F758D3A9C7EE0E /* Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits-iKhokhaFruitsUITests/Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
+		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		CEB565A72909A4F800C47028 /* iKhokhaFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKhokhaFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB565AA2909A4F800C47028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB565AE2909A4F800C47028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,9 @@
 		CE928E6D290A7F6D00BA1090 /* CustomTypes */ = {
 			isa = PBXGroup;
 			children = (
+				CE928E7D290A84AF00BA1090 /* CustomButton */,
+				CE928E7B290A84AF00BA1090 /* DynamicType */,
+				CE928E78290A846B00BA1090 /* APError */,
 			);
 			path = CustomTypes;
 			sourceTree = "<group>";
@@ -243,6 +252,30 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE928E78290A846B00BA1090 /* APError */ = {
+			isa = PBXGroup;
+			children = (
+				CE928E79290A847E00BA1090 /* APError.swift */,
+			);
+			path = APError;
+			sourceTree = "<group>";
+		};
+		CE928E7B290A84AF00BA1090 /* DynamicType */ = {
+			isa = PBXGroup;
+			children = (
+				CE928E7C290A84AF00BA1090 /* APDynamicType.swift */,
+			);
+			path = DynamicType;
+			sourceTree = "<group>";
+		};
+		CE928E7D290A84AF00BA1090 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE928E7E290A84AF00BA1090 /* APButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		CEB5659E2909A4F800C47028 = {
@@ -550,6 +583,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */,
+				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
+				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
+				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
