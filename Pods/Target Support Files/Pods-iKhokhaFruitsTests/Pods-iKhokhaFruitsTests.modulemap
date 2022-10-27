@@ -1,0 +1,6 @@
+framework module Pods_iKhokhaFruitsTests {
+  umbrella header "Pods-iKhokhaFruitsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
