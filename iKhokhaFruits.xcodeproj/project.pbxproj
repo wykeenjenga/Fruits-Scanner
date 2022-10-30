@@ -18,6 +18,10 @@
 		CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */; };
 		CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */; };
 		CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9954290E7EA200E16A1C /* APBaseViewController.swift */; };
+		CE4F995A290E7F5200E16A1C /* APExtension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9956290E7F5000E16A1C /* APExtension+UITableView.swift */; };
+		CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */; };
+		CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */; };
+		CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -65,6 +69,10 @@
 		CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDLoaderProtocol.swift; sourceTree = "<group>"; };
 		CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		CE4F9954290E7EA200E16A1C /* APBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBaseViewController.swift; sourceTree = "<group>"; };
+		CE4F9956290E7F5000E16A1C /* APExtension+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+UITableView.swift"; sourceTree = "<group>"; };
+		CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+Window.swift"; sourceTree = "<group>"; };
+		CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+UIViewController.swift"; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -289,6 +297,10 @@
 		CE928E76290A801E00BA1090 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F9956290E7F5000E16A1C /* APExtension+UITableView.swift */,
+				CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */,
+				CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */,
+				CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -631,10 +643,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */,
+				CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */,
 				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
+				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
+				CE4F995A290E7F5200E16A1C /* APExtension+UITableView.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
+				CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */,
 				CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */,
 				CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */,
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
