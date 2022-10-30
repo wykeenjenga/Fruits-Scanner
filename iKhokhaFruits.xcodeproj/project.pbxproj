@@ -17,6 +17,7 @@
 		CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994D290E7DCD00E16A1C /* APProtocols.swift */; };
 		CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */; };
 		CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */; };
+		CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9954290E7EA200E16A1C /* APBaseViewController.swift */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -63,6 +64,7 @@
 		CE4F994D290E7DCD00E16A1C /* APProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProtocols.swift; sourceTree = "<group>"; };
 		CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDLoaderProtocol.swift; sourceTree = "<group>"; };
 		CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		CE4F9954290E7EA200E16A1C /* APBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBaseViewController.swift; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		CE4F9953290E7E8000E16A1C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9954290E7EA200E16A1C /* APBaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		CE928E66290A7ECD00BA1090 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 		CE928E6F290A7F8D00BA1090 /* PresentationModules */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F9953290E7E8000E16A1C /* BaseViewController */,
 			);
 			path = PresentationModules;
 			sourceTree = "<group>";
@@ -625,6 +636,7 @@
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
 				CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */,
+				CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */,
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
 				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
