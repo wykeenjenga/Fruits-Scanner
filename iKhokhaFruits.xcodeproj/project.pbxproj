@@ -14,6 +14,9 @@
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
 		CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9948290E7C1700E16A1C /* APAPIEndPoints.swift */; };
 		CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994A290E7D4000E16A1C /* APConstants.swift */; };
+		CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994D290E7DCD00E16A1C /* APProtocols.swift */; };
+		CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */; };
+		CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -57,6 +60,9 @@
 		CE4F9945290E761D00E16A1C /* APDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDIContainer.swift; sourceTree = "<group>"; };
 		CE4F9948290E7C1700E16A1C /* APAPIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIEndPoints.swift; sourceTree = "<group>"; };
 		CE4F994A290E7D4000E16A1C /* APConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APConstants.swift; sourceTree = "<group>"; };
+		CE4F994D290E7DCD00E16A1C /* APProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProtocols.swift; sourceTree = "<group>"; };
+		CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDLoaderProtocol.swift; sourceTree = "<group>"; };
+		CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 		CE4F994C290E7D5D00E16A1C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F994D290E7DCD00E16A1C /* APProtocols.swift */,
+				CE4F994F290E7E0400E16A1C /* HUDLoaderProtocol.swift */,
+				CE4F9951290E7E2600E16A1C /* StoryboardInstantiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -611,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */,
+				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
@@ -618,6 +628,8 @@
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
 				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
+				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
+				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
