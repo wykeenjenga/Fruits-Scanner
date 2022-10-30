@@ -26,6 +26,9 @@
 		CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9963290E86F800E16A1C /* APFirebase.swift */; };
 		CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9964290E86F900E16A1C /* APFirebaseFactory.swift */; };
 		CE4F9968290E884000E16A1C /* APAPIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9967290E884000E16A1C /* APAPIGateway.swift */; };
+		CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4F996A290E8AD800E16A1C /* GoogleService-Info.plist */; };
+		CE4F9971290E9B5B00E16A1C /* APHardWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F996F290E9B5B00E16A1C /* APHardWallViewController.swift */; };
+		CE4F9972290E9B5B00E16A1C /* APHardWallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4F9970290E9B5B00E16A1C /* APHardWallViewController.xib */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -81,6 +84,9 @@
 		CE4F9963290E86F800E16A1C /* APFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APFirebase.swift; sourceTree = "<group>"; };
 		CE4F9964290E86F900E16A1C /* APFirebaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APFirebaseFactory.swift; sourceTree = "<group>"; };
 		CE4F9967290E884000E16A1C /* APAPIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIGateway.swift; sourceTree = "<group>"; };
+		CE4F996A290E8AD800E16A1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE4F996F290E9B5B00E16A1C /* APHardWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHardWallViewController.swift; sourceTree = "<group>"; };
+		CE4F9970290E9B5B00E16A1C /* APHardWallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APHardWallViewController.xib; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -201,6 +207,39 @@
 			path = "Firebase Accessors";
 			sourceTree = "<group>";
 		};
+		CE4F9969290E8AC100E16A1C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F996A290E8AD800E16A1C /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CE4F996C290E9AF500E16A1C /* HardWallModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F996E290E9B3A00E16A1C /* ViewModel */,
+				CE4F996D290E9B3100E16A1C /* ViewController */,
+			);
+			path = HardWallModule;
+			sourceTree = "<group>";
+		};
+		CE4F996D290E9B3100E16A1C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F996F290E9B5B00E16A1C /* APHardWallViewController.swift */,
+				CE4F9970290E9B5B00E16A1C /* APHardWallViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE4F996E290E9B3A00E16A1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CE928E66290A7ECD00BA1090 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +292,7 @@
 		CE928E6C290A7F5C00BA1090 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F9969290E8AC100E16A1C /* Firebase */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -277,6 +317,7 @@
 		CE928E6F290A7F8D00BA1090 /* PresentationModules */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F996C290E9AF500E16A1C /* HardWallModule */,
 				CE4F9953290E7E8000E16A1C /* BaseViewController */,
 			);
 			path = PresentationModules;
@@ -548,7 +589,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4F9972290E9B5B00E16A1C /* APHardWallViewController.xib in Resources */,
 				CEB565B72909A4FD00C47028 /* LaunchScreen.storyboard in Resources */,
+				CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */,
 				CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */,
 				CEB565B22909A4F800C47028 /* Main.storyboard in Resources */,
 			);
@@ -684,6 +727,7 @@
 				CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */,
 				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
 				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
+				CE4F9971290E9B5B00E16A1C /* APHardWallViewController.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */,
@@ -892,7 +936,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iKhokha.iKhokhaFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikhokha.techcheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -924,7 +968,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iKhokha.iKhokhaFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikhokha.techcheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
