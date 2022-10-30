@@ -12,6 +12,7 @@
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
+		CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9948290E7C1700E16A1C /* APAPIEndPoints.swift */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -53,6 +54,7 @@
 		C99D089B99F758D3A9C7EE0E /* Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits-iKhokhaFruitsUITests/Pods-iKhokhaFruits-iKhokhaFruitsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAppConfigurations.swift; sourceTree = "<group>"; };
 		CE4F9945290E761D00E16A1C /* APDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDIContainer.swift; sourceTree = "<group>"; };
+		CE4F9948290E7C1700E16A1C /* APAPIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIEndPoints.swift; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE4F9947290E7BEF00E16A1C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9948290E7C1700E16A1C /* APAPIEndPoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CE928E66290A7ECD00BA1090 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		CE928E6A290A7F4100BA1090 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F9947290E7BEF00E16A1C /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -594,6 +605,7 @@
 				CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */,
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
+				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
