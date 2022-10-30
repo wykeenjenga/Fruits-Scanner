@@ -11,14 +11,14 @@ import Foundation
 
 struct APAppConfigurations {
     static var apiProductsURL: String = {
-        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "ApiProductsURL") as? String else {
+        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "APIProductsUrl") as? String else {
             fatalError("ApiBaseURL must not be empty in plist")
         }
         return apiBaseURL
     }()
     
     static var apiProductsImagesURL: String = {
-        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "apiProductsImagesURL") as? String else {
+        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "APIProductsImageUrl") as? String else {
             fatalError("ApiBaseURL must not be empty in plist")
         }
         return apiBaseURL
