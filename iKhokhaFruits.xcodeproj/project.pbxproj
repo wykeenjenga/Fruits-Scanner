@@ -22,6 +22,10 @@
 		CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */; };
 		CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */; };
 		CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */; };
+		CE4F9962290E86B800E16A1C /* Accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9961290E86B800E16A1C /* Accessors.swift */; };
+		CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9963290E86F800E16A1C /* APFirebase.swift */; };
+		CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9964290E86F900E16A1C /* APFirebaseFactory.swift */; };
+		CE4F9968290E884000E16A1C /* APAPIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9967290E884000E16A1C /* APAPIGateway.swift */; };
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
@@ -73,6 +77,10 @@
 		CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+Window.swift"; sourceTree = "<group>"; };
 		CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APExtension+UIViewController.swift"; sourceTree = "<group>"; };
+		CE4F9961290E86B800E16A1C /* Accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessors.swift; sourceTree = "<group>"; };
+		CE4F9963290E86F800E16A1C /* APFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APFirebase.swift; sourceTree = "<group>"; };
+		CE4F9964290E86F900E16A1C /* APFirebaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APFirebaseFactory.swift; sourceTree = "<group>"; };
+		CE4F9967290E884000E16A1C /* APAPIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIGateway.swift; sourceTree = "<group>"; };
 		CE928E79290A847E00BA1090 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
@@ -168,6 +176,31 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
+		CE4F995E290E85A400E16A1C /* Accessors */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9961290E86B800E16A1C /* Accessors.swift */,
+			);
+			path = Accessors;
+			sourceTree = "<group>";
+		};
+		CE4F995F290E85B000E16A1C /* API Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9967290E884000E16A1C /* APAPIGateway.swift */,
+			);
+			path = "API Gateway";
+			sourceTree = "<group>";
+		};
+		CE4F9960290E868A00E16A1C /* Firebase Accessors */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F9963290E86F800E16A1C /* APFirebase.swift */,
+				CE4F9964290E86F900E16A1C /* APFirebaseFactory.swift */,
+			);
+			path = "Firebase Accessors";
+			sourceTree = "<group>";
+		};
 		CE928E66290A7ECD00BA1090 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +285,9 @@
 		CE928E70290A7FA200BA1090 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F995E290E85A400E16A1C /* Accessors */,
+				CE4F9960290E868A00E16A1C /* Firebase Accessors */,
+				CE4F995F290E85B000E16A1C /* API Gateway */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -642,12 +678,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4F9968290E884000E16A1C /* APAPIGateway.swift in Sources */,
+				CE4F9962290E86B800E16A1C /* Accessors.swift in Sources */,
 				CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */,
 				CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */,
 				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
 				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
+				CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */,
 				CE4F995A290E7F5200E16A1C /* APExtension+UITableView.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
 				CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */,
@@ -656,6 +695,7 @@
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
 				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
+				CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */,
 				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
 				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */,
