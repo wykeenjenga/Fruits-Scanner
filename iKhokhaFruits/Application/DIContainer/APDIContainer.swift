@@ -10,14 +10,15 @@ import Foundation
 
 final class APDIContainer {
     // MARK: - Network
-//    lazy var apiDataTransferService: DataTransfer = {
-//        let config = APNetworkConfiguration(baseURL: URL(string: APAppConfigurations.apiBaseURL)!)
-//        let apiDataNetwork = DefaultNetworkService(session: URLSession.shared,
-//                                                   config: config)
-//        return DefaultDataTransferService(with: apiDataNetwork)
-//    }()
+    ///Network to be init
 }
 
 extension APDIContainer {
+    // MARK: DIContainers of scenes
     
+    /// Creates Hardwall DIContainer.
+    func makeHardWallDIContainer() -> APHardwallDIContainer {
+        let dependencies = APHardwallDIContainer.Dependencies()
+        return APHardwallDIContainer(dependencies: dependencies)
+    }
 }

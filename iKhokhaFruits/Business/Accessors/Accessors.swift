@@ -12,6 +12,7 @@ import UIKit
 struct Accessors {
     
     enum Storyboard: String {
+        
         case main = "Main"
         
         func instantiate(with identifier: String) -> AnyObject {
@@ -21,6 +22,6 @@ struct Accessors {
     }
     
     struct AppDelegate {
-        static let delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        static let delegate: APAppDelegate = UIApplication.shared.delegate as! APAppDelegate
     }
 }

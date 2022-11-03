@@ -14,9 +14,6 @@ import FirebaseStorage
 
 struct APFirebaseFactory {
     
-    //MARK: Collections
-    private static let firestoreUser = "User"
-    private static let firestoreUserFriends = "Friends"
 
     //MARK: Accessor Properties
     private static let _firAuth = Auth.auth()

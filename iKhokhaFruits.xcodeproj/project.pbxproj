@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		051005BA13415D06D48942CB /* Pods_iKhokhaFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */; };
 		06D9EFFCBC25B037D850DF0F /* Pods_iKhokhaFruits_iKhokhaFruitsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903A7D75CF054D0A76649753 /* Pods_iKhokhaFruits_iKhokhaFruitsUITests.framework */; };
+		0B367756291380FE009A0D71 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B367755291380FE009A0D71 /* CustomTextField.swift */; };
+		0B36775C2913843B009A0D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B36775A2913843A009A0D71 /* LaunchScreen.storyboard */; };
+		0B36775D2913843B009A0D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B36775B2913843B009A0D71 /* Main.storyboard */; };
+		0B3677612913853D009A0D71 /* APOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677602913853D009A0D71 /* APOnboardViewController.swift */; };
+		0B36776429138BED009A0D71 /* HardwallDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36776329138BED009A0D71 /* HardwallDiContainer.swift */; };
+		0B36776729139242009A0D71 /* APBindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36776629139242009A0D71 /* APBindingTextField.swift */; };
+		0B36776A2913930A009A0D71 /* APBRokenRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677692913930A009A0D71 /* APBRokenRules.swift */; };
+		0B36777029139D65009A0D71 /* APHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36776E29139D65009A0D71 /* APHomeViewController.swift */; };
+		0B36777129139D65009A0D71 /* APHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36776F29139D65009A0D71 /* APHomeViewController.xib */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
@@ -32,11 +41,8 @@
 		CE928E7A290A847E00BA1090 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E79290A847E00BA1090 /* APError.swift */; };
 		CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7C290A84AF00BA1090 /* APDynamicType.swift */; };
 		CE928E80290A84B000BA1090 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928E7E290A84AF00BA1090 /* APButton.swift */; };
-		CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565AA2909A4F800C47028 /* AppDelegate.swift */; };
-		CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565AE2909A4F800C47028 /* ViewController.swift */; };
-		CEB565B22909A4F800C47028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB565B02909A4F800C47028 /* Main.storyboard */; };
+		CEB565AB2909A4F800C47028 /* APAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565AA2909A4F800C47028 /* APAppDelegate.swift */; };
 		CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB565B32909A4FD00C47028 /* Assets.xcassets */; };
-		CEB565B72909A4FD00C47028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB565B52909A4FD00C47028 /* LaunchScreen.storyboard */; };
 		CEB565C22909A4FE00C47028 /* iKhokhaFruitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565C12909A4FE00C47028 /* iKhokhaFruitsTests.swift */; };
 		CEB565CC2909A4FE00C47028 /* iKhokhaFruitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565CB2909A4FE00C47028 /* iKhokhaFruitsUITests.swift */; };
 		CEB565CE2909A4FE00C47028 /* iKhokhaFruitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB565CD2909A4FE00C47028 /* iKhokhaFruitsUITestsLaunchTests.swift */; };
@@ -61,6 +67,15 @@
 
 /* Begin PBXFileReference section */
 		00364957B7AC0EDAA7F259A5 /* Pods-iKhokhaFruits-iKhokhaFruitsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits-iKhokhaFruitsUITests.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits-iKhokhaFruitsUITests/Pods-iKhokhaFruits-iKhokhaFruitsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B367755291380FE009A0D71 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0B36775A2913843A009A0D71 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B36775B2913843B009A0D71 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0B3677602913853D009A0D71 /* APOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOnboardViewController.swift; sourceTree = "<group>"; };
+		0B36776329138BED009A0D71 /* HardwallDiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwallDiContainer.swift; sourceTree = "<group>"; };
+		0B36776629139242009A0D71 /* APBindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBindingTextField.swift; sourceTree = "<group>"; };
+		0B3677692913930A009A0D71 /* APBRokenRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBRokenRules.swift; sourceTree = "<group>"; };
+		0B36776E29139D65009A0D71 /* APHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHomeViewController.swift; sourceTree = "<group>"; };
+		0B36776F29139D65009A0D71 /* APHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APHomeViewController.xib; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
 		4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,11 +106,8 @@
 		CE928E7C290A84AF00BA1090 /* APDynamicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APDynamicType.swift; sourceTree = "<group>"; };
 		CE928E7E290A84AF00BA1090 /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		CEB565A72909A4F800C47028 /* iKhokhaFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKhokhaFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB565AA2909A4F800C47028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEB565AE2909A4F800C47028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEB565B12909A4F800C47028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB565AA2909A4F800C47028 /* APAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAppDelegate.swift; sourceTree = "<group>"; };
 		CEB565B32909A4FD00C47028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEB565B62909A4FD00C47028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB565B82909A4FD00C47028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB565BD2909A4FE00C47028 /* iKhokhaFruitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKhokhaFruitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB565C12909A4FE00C47028 /* iKhokhaFruitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKhokhaFruitsTests.swift; sourceTree = "<group>"; };
@@ -133,6 +145,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B367754291380E1009A0D71 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0B367755291380FE009A0D71 /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		0B367757291383BA009A0D71 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0B36775A2913843A009A0D71 /* LaunchScreen.storyboard */,
+				0B36775B2913843B009A0D71 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0B36775E291384F2009A0D71 /* OnboardingModule */ = {
+			isa = PBXGroup;
+			children = (
+				0B36775F29138511009A0D71 /* ViewController */,
+			);
+			path = OnboardingModule;
+			sourceTree = "<group>";
+		};
+		0B36775F29138511009A0D71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677602913853D009A0D71 /* APOnboardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0B36776229138BD0009A0D71 /* HardwallDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0B36776329138BED009A0D71 /* HardwallDiContainer.swift */,
+			);
+			path = HardwallDIContainer;
+			sourceTree = "<group>";
+		};
+		0B36776529139223009A0D71 /* APBindingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0B36776629139242009A0D71 /* APBindingTextField.swift */,
+			);
+			path = APBindingTextField;
+			sourceTree = "<group>";
+		};
+		0B367768291392EF009A0D71 /* BrokenRules */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677692913930A009A0D71 /* APBRokenRules.swift */,
+			);
+			path = BrokenRules;
+			sourceTree = "<group>";
+		};
+		0B36776B291399E5009A0D71 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				0B36776D29139D4C009A0D71 /* ViewController */,
+				0B36776C29139D43009A0D71 /* ViewModel */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		0B36776C29139D43009A0D71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B36776D29139D4C009A0D71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B36776E29139D65009A0D71 /* APHomeViewController.swift */,
+				0B36776F29139D65009A0D71 /* APHomeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		65FD24E1155C3264FE18AB65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,7 +347,7 @@
 		CE928E67290A7EE200BA1090 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				CEB565AA2909A4F800C47028 /* AppDelegate.swift */,
+				CEB565AA2909A4F800C47028 /* APAppDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -262,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4F9945290E761D00E16A1C /* APDIContainer.swift */,
+				0B36776229138BD0009A0D71 /* HardwallDIContainer */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -282,13 +377,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		CE928E6B290A7F4D00BA1090 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		CE928E6C290A7F5C00BA1090 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +388,9 @@
 		CE928E6D290A7F6D00BA1090 /* CustomTypes */ = {
 			isa = PBXGroup;
 			children = (
+				0B367768291392EF009A0D71 /* BrokenRules */,
+				0B36776529139223009A0D71 /* APBindingTextField */,
+				0B367754291380E1009A0D71 /* CustomTextField */,
 				CE928E7D290A84AF00BA1090 /* CustomButton */,
 				CE928E7B290A84AF00BA1090 /* DynamicType */,
 				CE928E78290A846B00BA1090 /* APError */,
@@ -307,17 +398,12 @@
 			path = CustomTypes;
 			sourceTree = "<group>";
 		};
-		CE928E6E290A7F7D00BA1090 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		CE928E6F290A7F8D00BA1090 /* PresentationModules */ = {
 			isa = PBXGroup;
 			children = (
+				0B36776B291399E5009A0D71 /* HomeModule */,
 				CE4F996C290E9AF500E16A1C /* HardWallModule */,
+				0B36775E291384F2009A0D71 /* OnboardingModule */,
 				CE4F9953290E7E8000E16A1C /* BaseViewController */,
 			);
 			path = PresentationModules;
@@ -448,14 +534,10 @@
 				CE928E71290A7FB500BA1090 /* Domain */,
 				CE928E70290A7FA200BA1090 /* Business */,
 				CE928E6F290A7F8D00BA1090 /* PresentationModules */,
-				CE928E6E290A7F7D00BA1090 /* CustomViews */,
 				CE928E6D290A7F6D00BA1090 /* CustomTypes */,
 				CE928E6C290A7F5C00BA1090 /* Resources */,
-				CE928E6B290A7F4D00BA1090 /* Storyboard */,
-				CEB565AE2909A4F800C47028 /* ViewController.swift */,
-				CEB565B02909A4F800C47028 /* Main.storyboard */,
 				CEB565B32909A4FD00C47028 /* Assets.xcassets */,
-				CEB565B52909A4FD00C47028 /* LaunchScreen.storyboard */,
+				0B367757291383BA009A0D71 /* Storyboards */,
 				CEB565B82909A4FD00C47028 /* Info.plist */,
 			);
 			path = iKhokhaFruits;
@@ -589,11 +671,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B36777129139D65009A0D71 /* APHomeViewController.xib in Resources */,
 				CE4F9972290E9B5B00E16A1C /* APHardWallViewController.xib in Resources */,
-				CEB565B72909A4FD00C47028 /* LaunchScreen.storyboard in Resources */,
+				0B36775D2913843B009A0D71 /* Main.storyboard in Resources */,
+				0B36775C2913843B009A0D71 /* LaunchScreen.storyboard in Resources */,
 				CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */,
 				CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */,
-				CEB565B22909A4F800C47028 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,9 +805,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4F9968290E884000E16A1C /* APAPIGateway.swift in Sources */,
+				0B36776A2913930A009A0D71 /* APBRokenRules.swift in Sources */,
 				CE4F9962290E86B800E16A1C /* Accessors.swift in Sources */,
-				CEB565AF2909A4F800C47028 /* ViewController.swift in Sources */,
+				0B3677612913853D009A0D71 /* APOnboardViewController.swift in Sources */,
 				CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */,
+				0B367756291380FE009A0D71 /* CustomTextField.swift in Sources */,
 				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
 				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
 				CE4F9971290E9B5B00E16A1C /* APHardWallViewController.swift in Sources */,
@@ -735,14 +820,17 @@
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
 				CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */,
 				CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */,
+				0B36777029139D65009A0D71 /* APHomeViewController.swift in Sources */,
 				CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */,
 				CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */,
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
+				0B36776729139242009A0D71 /* APBindingTextField.swift in Sources */,
 				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
+				0B36776429138BED009A0D71 /* HardwallDiContainer.swift in Sources */,
 				CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */,
 				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
 				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
-				CEB565AB2909A4F800C47028 /* AppDelegate.swift in Sources */,
+				CEB565AB2909A4F800C47028 /* APAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,25 +865,6 @@
 			targetProxy = CEB565C82909A4FE00C47028 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CEB565B02909A4F800C47028 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB565B12909A4F800C47028 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CEB565B52909A4FD00C47028 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB565B62909A4FD00C47028 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEB565CF2909A4FE00C47028 /* Debug */ = {
@@ -922,7 +991,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QF8UV7G7B5;
+				DEVELOPMENT_TEAM = J69KB9AJDV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iKhokhaFruits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -930,7 +999,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -938,6 +1007,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikhokha.techcheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -954,7 +1026,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QF8UV7G7B5;
+				DEVELOPMENT_TEAM = J69KB9AJDV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iKhokhaFruits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -962,7 +1034,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -970,6 +1042,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikhokha.techcheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

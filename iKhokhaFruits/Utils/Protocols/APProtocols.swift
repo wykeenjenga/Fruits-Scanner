@@ -48,6 +48,25 @@ extension HapticFeedback where Self: UIControl {
     }
 }
 
+protocol Shake {
+     func shake()
+}
+
+extension Shake where Self: UIView {
+    
+    func shake() {
+        self.layer.removeAnimation(forKey: "shake")
+        let animation : CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.repeatCount = 10
+        animation.duration = 0.1/TimeInterval(animation.repeatCount)
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: -2.0, y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: 2.0, y: self.center.y))
+        layer.add(animation, forKey: "shake")
+    }
+}
+
 
 protocol AddKeyboardSuppressingAccessory {
     func addKeyboardSuppressingAccessory()

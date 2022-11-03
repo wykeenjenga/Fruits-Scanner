@@ -1,24 +1,19 @@
 //
-//  APHardWallViewController.swift
+//  APHomeViewController.swift
 //  iKhokhaFruits
 //
-//  Created by Wykee Njenga on 10/30/22.
+//  Created by Wykee on 03/11/2022.
 //  Copyright © 2022 iKhokha. All rights reserved.
 //
 
 import UIKit
 
-class APHardWallViewController: UIViewController {
+class APHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    final class func create() -> APHardWallViewController {
-        let view = APHardWallViewController(nibName: "APHardWallViewController", bundle: nil)
-        return view
     }
 
 
