@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Loaf
 
 class APHardWallViewController: BaseViewController {
     
@@ -70,8 +69,9 @@ class APHardWallViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
-    final class func create() -> APHardWallViewController {
+    final class func create(with viewModel: APHardWallViewModel) -> APHardWallViewController {
         let view = APHardWallViewController(nibName: "APHardWallViewController", bundle: nil)
+        view.viewModel = viewModel
         return view
     }
     

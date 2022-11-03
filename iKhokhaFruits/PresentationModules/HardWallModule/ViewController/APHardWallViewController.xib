@@ -52,6 +52,9 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="exitWhenReturnTapped" value="YES"/>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="showsALine" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZu-eu-sfD" customClass="APAnimatablePlaceholderTextField" customModule="iKhokhaFruits" customModuleProvider="target">
@@ -69,6 +72,9 @@
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="showsALine" value="YES"/>
                                 <userDefinedRuntimeAttribute type="color" keyPath="placeHolderTextForAnimationColor">
                                     <color key="value" name="gray"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="40"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>

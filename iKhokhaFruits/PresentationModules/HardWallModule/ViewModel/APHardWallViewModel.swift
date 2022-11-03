@@ -8,17 +8,39 @@
 
 import Foundation
 
-protocol APHardWallViewModelOutput{
+enum APHardWallViewModelRoute {
+    case initial
+    case back
+    case error
+    case activity(loading: Bool)
+}
+
+protocol APHardWallViewModelInput {
+    func performLogin(with completion: @escaping (Result<Bool,WrappedError>)->())
+}
+
+protocol APHardWallViewModelOutput {
+    var route: Dynamic<APHardWallViewModelRoute> { get set }
+    var emailText: Dynamic<String> {get set}
+    var passwordText: Dynamic<String> {get set}
+}
+
+protocol APHardWallViewModel: APHardWallViewModelInput, APHardWallViewModelOutput {
     
 }
 
-struct APHardWallViewModel: BrokenRuleEnforcer, APHardWallViewModelOutput {
-    
-    var brokenRules: [BrokenRule]
+final class DefaultAPHardWallViewModel: APHardWallViewModel {
     
     var emailText: Dynamic<String> = Dynamic<String>("")
     var passwordText: Dynamic<String> = Dynamic<String>("")
+    var route: Dynamic<APHardWallViewModelRoute> = Dynamic(.initial)
     
+    init() {
+        
+    }
+}
+
+extension APHardWallViewModel{
     
     func performLogin(with completion: @escaping (Result<Bool,WrappedError>)->()) {
         let apiDoor = APAPIGateway.door()
@@ -27,18 +49,6 @@ struct APHardWallViewModel: BrokenRuleEnforcer, APHardWallViewModelOutput {
         }
     }
     
-    func performSignUp(with completion: @escaping (Result<Bool,WrappedError>)->()) {
-        let apiDoor = APAPIGateway.door()
-    }
-
-    
-    func performResetPassword(with completion: @escaping (Bool,Error?)->()) {
-    }
-    
-    var isValid :Bool {
-          mutating get {
-              return self.brokenRules.count == 0 ? true : false
-          }
-      }
-
 }
+
+

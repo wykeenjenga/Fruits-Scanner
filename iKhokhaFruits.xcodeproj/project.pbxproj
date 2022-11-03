@@ -23,6 +23,9 @@
 		0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677792913A7C4009A0D71 /* APProductsModel.swift */; };
 		0B36777D2913AC5B009A0D71 /* APHardWallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36777C2913AC5B009A0D71 /* APHardWallViewModel.swift */; };
 		0B3677802913AFFD009A0D71 /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */; };
+		0B3677842913C039009A0D71 /* APBarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677832913C039009A0D71 /* APBarcodeScanner.swift */; };
+		0B3677882913F46C009A0D71 /* APProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */; };
+		0B3677892913F46C009A0D71 /* APProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
@@ -86,6 +89,9 @@
 		0B3677792913A7C4009A0D71 /* APProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsModel.swift; sourceTree = "<group>"; };
 		0B36777C2913AC5B009A0D71 /* APHardWallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHardWallViewModel.swift; sourceTree = "<group>"; };
 		0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
+		0B3677832913C039009A0D71 /* APBarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBarcodeScanner.swift; sourceTree = "<group>"; };
+		0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsTableViewCell.swift; sourceTree = "<group>"; };
+		0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APProductsTableViewCell.xib; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
 		4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +221,7 @@
 		0B36776B291399E5009A0D71 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				0B3677852913F446009A0D71 /* ViewCells */,
 				0B36776D29139D4C009A0D71 /* ViewController */,
 				0B36776C29139D43009A0D71 /* ViewModel */,
 			);
@@ -276,6 +283,30 @@
 				0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */,
 			);
 			path = HomeDIContainer;
+			sourceTree = "<group>";
+		};
+		0B3677812913C003009A0D71 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0B3677822913C018009A0D71 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677832913C039009A0D71 /* APBarcodeScanner.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		0B3677852913F446009A0D71 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */,
+				0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */,
+			);
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 		65FD24E1155C3264FE18AB65 /* Frameworks */ = {
@@ -434,6 +465,7 @@
 		CE928E6D290A7F6D00BA1090 /* CustomTypes */ = {
 			isa = PBXGroup;
 			children = (
+				0B3677822913C018009A0D71 /* BarcodeScanner */,
 				0B367768291392EF009A0D71 /* BrokenRules */,
 				0B36776529139223009A0D71 /* APBindingTextField */,
 				0B367754291380E1009A0D71 /* CustomTextField */,
@@ -468,6 +500,7 @@
 		CE928E75290A801400BA1090 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0B3677812913C003009A0D71 /* New Group */,
 				CE928E76290A801E00BA1090 /* Extensions */,
 			);
 			path = Common;
@@ -690,6 +723,7 @@
 				CE4F9972290E9B5B00E16A1C /* APHardWallViewController.xib in Resources */,
 				0B36775D2913843B009A0D71 /* Main.storyboard in Resources */,
 				0B36775C2913843B009A0D71 /* LaunchScreen.storyboard in Resources */,
+				0B3677892913F46C009A0D71 /* APProductsTableViewCell.xib in Resources */,
 				CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */,
 				0B36777429139F0E009A0D71 /* beep.mp3 in Resources */,
 				CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */,
@@ -831,6 +865,7 @@
 				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
 				CE4F9971290E9B5B00E16A1C /* APHardWallViewController.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
+				0B3677882913F46C009A0D71 /* APProductsTableViewCell.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */,
 				0B3677802913AFFD009A0D71 /* HomeDIContainer.swift in Sources */,
@@ -848,6 +883,7 @@
 				0B36776429138BED009A0D71 /* HardwallDiContainer.swift in Sources */,
 				CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */,
 				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
+				0B3677842913C039009A0D71 /* APBarcodeScanner.swift in Sources */,
 				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* APAppDelegate.swift in Sources */,
 				0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */,
@@ -1014,6 +1050,7 @@
 				DEVELOPMENT_TEAM = J69KB9AJDV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iKhokhaFruits/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "iKhokha would like to use your camera to scan products.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1049,6 +1086,7 @@
 				DEVELOPMENT_TEAM = J69KB9AJDV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iKhokhaFruits/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "iKhokha would like to use your camera to scan products.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -14,7 +14,6 @@ import FirebaseStorage
 
 struct APFirebaseFactory {
     
-
     //MARK: Accessor Properties
     private static let _firAuth = Auth.auth()
     private static let _firestore = Firestore.firestore()

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class APOnboardViewController: UIViewController {
 
@@ -37,12 +38,17 @@ class APOnboardViewController: UIViewController {
         
         let isOnboardingShown = UserDefaults.standard.bool(forKey: "isOnboarding")
         if isOnboardingShown{
-            navigateHome()
+            let user =  Auth.auth().currentUser//APFirebaseFactory.auth().currentUser
+            if user != nil{
+                navigateHome()
+            }else{
+                navigateToHardWall()
+            }
         }
     }
     
     @IBAction func getStarted(_ sender: Any) {
-        navigateHome()
+        navigateToHardWall()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,12 +57,19 @@ class APOnboardViewController: UIViewController {
         self.getStartedBtn.isEnabled = false
     }
     
-    func navigateHome(){
+    func navigateToHardWall(){
         UserDefaults.standard.set(true, forKey: "isOnboarding")
         let hardWallVC = Accessors.AppDelegate.delegate.appDiContainer.makeHardWallDIContainer().makeHardWallViewController()
         hardWallVC.modalTransitionStyle = .coverVertical
         hardWallVC.modalPresentationStyle = .fullScreen
         self.present(hardWallVC, animated: true)
+    }
+    
+    func navigateHome(){
+        let homeVC = Accessors.AppDelegate.delegate.appDiContainer.makeHomeDIContainer().makeHomeViewController()
+        homeVC.modalPresentationStyle = .fullScreen
+        homeVC.modalTransitionStyle = .coverVertical
+        self.present(homeVC, animated: true)
     }
     
     func initSwipe(){
