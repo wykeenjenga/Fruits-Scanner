@@ -9,7 +9,13 @@
 import UIKit
 
 class APProductsTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var fruitImage: UIImageView!
+    @IBOutlet weak var fruitTitle: UILabel!
+    @IBOutlet weak var fruitDescription: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
