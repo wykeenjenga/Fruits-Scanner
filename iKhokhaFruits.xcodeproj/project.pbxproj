@@ -22,6 +22,7 @@
 		0B3677762913A408009A0D71 /* APHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677752913A408009A0D71 /* APHomeViewModel.swift */; };
 		0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677792913A7C4009A0D71 /* APProductsModel.swift */; };
 		0B36777D2913AC5B009A0D71 /* APHardWallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36777C2913AC5B009A0D71 /* APHardWallViewModel.swift */; };
+		0B3677802913AFFD009A0D71 /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
@@ -84,6 +85,7 @@
 		0B3677752913A408009A0D71 /* APHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHomeViewModel.swift; sourceTree = "<group>"; };
 		0B3677792913A7C4009A0D71 /* APProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsModel.swift; sourceTree = "<group>"; };
 		0B36777C2913AC5B009A0D71 /* APHardWallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHardWallViewModel.swift; sourceTree = "<group>"; };
+		0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
 		4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +270,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0B36777E2913AFD8009A0D71 /* HomeDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0B36777F2913AFFD009A0D71 /* HomeDIContainer.swift */,
+			);
+			path = HomeDIContainer;
+			sourceTree = "<group>";
+		};
 		65FD24E1155C3264FE18AB65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +401,7 @@
 			children = (
 				CE4F9945290E761D00E16A1C /* APDIContainer.swift */,
 				0B36776229138BD0009A0D71 /* HardwallDIContainer */,
+				0B36777E2913AFD8009A0D71 /* HomeDIContainer */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -822,6 +833,7 @@
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */,
+				0B3677802913AFFD009A0D71 /* HomeDIContainer.swift in Sources */,
 				CE4F995A290E7F5200E16A1C /* APExtension+UITableView.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
 				CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Loaf
 
 class APHardWallViewController: BaseViewController {
     
@@ -17,9 +18,15 @@ class APHardWallViewController: BaseViewController {
     }
     
     @IBOutlet weak var emailTextField: APAnimatablePlaceholderTextField!{
-        didSet{
-            
-        }
+        didSet {
+               self.emailTextField.bind { [weak self] in guard let checkedSelf = self else { return }
+                   checkedSelf.viewModel.emailText.value = $0
+               }
+               self.emailTextField.bindForFailure { (error) in
+                   //Do something when failure occurs.
+               }
+               self.emailTextField.rulesToBeValidated = [.emailLength,.emailMalformed]
+           }
     }
     
     @IBOutlet weak var passwordTextField: APAnimatablePlaceholderTextField!{
@@ -35,16 +42,31 @@ class APHardWallViewController: BaseViewController {
     }
     
     @IBOutlet weak var continueButton: APBindingButton!{
-        didSet{
-            self.continueButton.bind {
-                self.showHUD()
-            }
-        }
+        didSet {
+              self.continueButton.bind {
+                  if self.passwordTextField.isValid() {
+                      //Check if password textField is holds valid data.
+                      self.showHUD()
+                      self.viewModel.performLogin { [weak self] (result) in guard let checkedSelf = self else { return }
+                          checkedSelf.hideHUD()
+                          switch result {
+                          case .success:
+                              DispatchQueue.main.async {
+                                  checkedSelf.navigateHome()
+                              }
+                              break
+                          case .failure(let error):
+                              print(error.error?.localizedDescription ?? "")
+                              break
+                          }
+                      }
+                  }
+              }
+          }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -52,16 +74,13 @@ class APHardWallViewController: BaseViewController {
         let view = APHardWallViewController(nibName: "APHardWallViewController", bundle: nil)
         return view
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    func navigateHome(){
+        let homeVC = Accessors.AppDelegate.delegate.appDiContainer.makeHomeDIContainer().makeHomeViewController()
+        homeVC.modalPresentationStyle = .fullScreen
+        homeVC.modalTransitionStyle = .coverVertical
+        self.present(homeVC, animated: true)
     }
-    */
 
 }

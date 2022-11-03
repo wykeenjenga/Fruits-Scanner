@@ -38,6 +38,12 @@ class APHomeViewController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
+    final class func create(with viewModel: APHomeViewModel) -> APHomeViewController {
+        let view = APHomeViewController(nibName: "APHomeViewController", bundle: nil)
+        view.viewModel = viewModel
+        return view
+    }
+    
     func bindViewModel(){
         
     }

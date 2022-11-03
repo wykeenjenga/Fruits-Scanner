@@ -9,7 +9,7 @@
 import Foundation
 
 protocol APHardWallViewModelOutput{
-    //var countryCode: Dynamic<[String]> { get set }
+    
 }
 
 struct APHardWallViewModel: BrokenRuleEnforcer, APHardWallViewModelOutput {
