@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APHardWallViewController" customModule="iKhokhaFruits" customModuleProvider="target">
             <connections>
+                <outlet property="continueButton" destination="1JS-jt-Wl3" id="M2A-QO-av8"/>
+                <outlet property="emailTextField" destination="5py-nB-2ub" id="yAY-8E-Hz3"/>
+                <outlet property="passwordTextField" destination="uZu-eu-sfD" id="Oho-A0-5x5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

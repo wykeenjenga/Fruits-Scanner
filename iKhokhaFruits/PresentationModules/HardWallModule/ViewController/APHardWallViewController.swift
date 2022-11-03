@@ -8,8 +8,40 @@
 
 import UIKit
 
-class APHardWallViewController: UIViewController {
+class APHardWallViewController: BaseViewController {
+    
+    var viewModel: APHardWallViewModel!
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    @IBOutlet weak var emailTextField: APAnimatablePlaceholderTextField!{
+        didSet{
+            
+        }
+    }
+    
+    @IBOutlet weak var passwordTextField: APAnimatablePlaceholderTextField!{
+        didSet {
+            self.passwordTextField.bind { [weak self] in guard let checkedSelf = self else { return }
+                checkedSelf.viewModel.passwordText.value = $0
+            }
+            self.passwordTextField.bindForFailure { (error) in
+                //Do something when failure occurs.
+            }
+            self.passwordTextField.rulesToBeValidated = [.passwordLength]
+        }
+    }
+    
+    @IBOutlet weak var continueButton: APBindingButton!{
+        didSet{
+            self.continueButton.bind {
+                self.showHUD()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
