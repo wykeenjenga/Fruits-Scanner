@@ -48,4 +48,8 @@ class APFirebase {
         }
     }
     
+    func getAllProducts(completion: @escaping (Bool, Error?) -> Void){
+        
+    }
+    
 }

@@ -18,6 +18,9 @@
 		0B36776A2913930A009A0D71 /* APBRokenRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677692913930A009A0D71 /* APBRokenRules.swift */; };
 		0B36777029139D65009A0D71 /* APHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36776E29139D65009A0D71 /* APHomeViewController.swift */; };
 		0B36777129139D65009A0D71 /* APHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36776F29139D65009A0D71 /* APHomeViewController.xib */; };
+		0B36777429139F0E009A0D71 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B36777329139F0E009A0D71 /* beep.mp3 */; };
+		0B3677762913A408009A0D71 /* APHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677752913A408009A0D71 /* APHomeViewModel.swift */; };
+		0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677792913A7C4009A0D71 /* APProductsModel.swift */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
@@ -76,6 +79,9 @@
 		0B3677692913930A009A0D71 /* APBRokenRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBRokenRules.swift; sourceTree = "<group>"; };
 		0B36776E29139D65009A0D71 /* APHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHomeViewController.swift; sourceTree = "<group>"; };
 		0B36776F29139D65009A0D71 /* APHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APHomeViewController.xib; sourceTree = "<group>"; };
+		0B36777329139F0E009A0D71 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		0B3677752913A408009A0D71 /* APHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APHomeViewModel.swift; sourceTree = "<group>"; };
+		0B3677792913A7C4009A0D71 /* APProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsModel.swift; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
 		4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +220,7 @@
 		0B36776C29139D43009A0D71 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0B3677752913A408009A0D71 /* APHomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -225,6 +232,30 @@
 				0B36776F29139D65009A0D71 /* APHomeViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0B36777229139EF0009A0D71 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				0B36777329139F0E009A0D71 /* beep.mp3 */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
+		0B3677772913A79C009A0D71 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677782913A7A8009A0D71 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0B3677782913A7A8009A0D71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B3677792913A7C4009A0D71 /* APProductsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		65FD24E1155C3264FE18AB65 /* Frameworks */ = {
@@ -380,6 +411,7 @@
 		CE928E6C290A7F5C00BA1090 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B36777229139EF0009A0D71 /* SoundEffects */,
 				CE4F9969290E8AC100E16A1C /* Firebase */,
 			);
 			path = Resources;
@@ -417,36 +449,6 @@
 				CE4F995F290E85B000E16A1C /* API Gateway */,
 			);
 			path = Business;
-			sourceTree = "<group>";
-		};
-		CE928E71290A7FB500BA1090 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				CE928E72290A7FBC00BA1090 /* Models */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		CE928E72290A7FBC00BA1090 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CE928E73290A7FF300BA1090 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				CE928E74290A800600BA1090 /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		CE928E74290A800600BA1090 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		CE928E75290A801400BA1090 /* Common */ = {
@@ -530,8 +532,7 @@
 				CE928E6A290A7F4100BA1090 /* Data */,
 				CE928E77290A802D00BA1090 /* Utils */,
 				CE928E75290A801400BA1090 /* Common */,
-				CE928E73290A7FF300BA1090 /* Infrastructure */,
-				CE928E71290A7FB500BA1090 /* Domain */,
+				0B3677772913A79C009A0D71 /* Domain */,
 				CE928E70290A7FA200BA1090 /* Business */,
 				CE928E6F290A7F8D00BA1090 /* PresentationModules */,
 				CE928E6D290A7F6D00BA1090 /* CustomTypes */,
@@ -676,6 +677,7 @@
 				0B36775D2913843B009A0D71 /* Main.storyboard in Resources */,
 				0B36775C2913843B009A0D71 /* LaunchScreen.storyboard in Resources */,
 				CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */,
+				0B36777429139F0E009A0D71 /* beep.mp3 in Resources */,
 				CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,11 +828,13 @@
 				CE928E80290A84B000BA1090 /* APButton.swift in Sources */,
 				0B36776729139242009A0D71 /* APBindingTextField.swift in Sources */,
 				CE4F9949290E7C1700E16A1C /* APAPIEndPoints.swift in Sources */,
+				0B3677762913A408009A0D71 /* APHomeViewModel.swift in Sources */,
 				0B36776429138BED009A0D71 /* HardwallDiContainer.swift in Sources */,
 				CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */,
 				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
 				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* APAppDelegate.swift in Sources */,
+				0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
