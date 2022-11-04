@@ -13,28 +13,25 @@
         <array key="Mulish-Bold.ttf">
             <string>Mulish-Bold</string>
         </array>
-        <array key="Mulish-Regular.ttf">
-            <string>Mulish-Regular</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="APProductsTableViewCell" customModule="iKhokhaFruits" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="289" height="48"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="APProductsTableViewCell" customModule="iKhokhaFruits" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="53"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="289" height="48"/>
+                <rect key="frame" x="0.0" y="0.0" width="289" height="53"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-ce-WF5">
-                        <rect key="frame" x="0.0" y="0.0" width="289" height="45.333333333333336"/>
+                        <rect key="frame" x="0.0" y="0.0" width="289" height="53"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMB-6m-BDG">
-                                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="53"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-0q-spy">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruits2" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-0q-spy">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="53"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="14"/>
@@ -45,12 +42,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Qwk-0q-spy" secondAttribute="bottom" id="1rI-vj-Ut1"/>
-                                    <constraint firstAttribute="height" constant="46" id="H3R-pW-eeD"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qwk-0q-spy" secondAttribute="trailing" id="Qpf-Td-8oY"/>
-                                    <constraint firstItem="Qwk-0q-spy" firstAttribute="top" secondItem="QMB-6m-BDG" secondAttribute="top" id="Wwl-rY-Nh7"/>
-                                    <constraint firstItem="Qwk-0q-spy" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="leading" id="kMp-9U-tdj"/>
-                                    <constraint firstAttribute="width" constant="46" id="znV-Fp-JJ0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qwk-0q-spy" secondAttribute="bottom" id="1nN-Q7-fiF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qwk-0q-spy" secondAttribute="trailing" id="2QN-3R-uo4"/>
+                                    <constraint firstAttribute="height" constant="53" id="E1V-Lu-nb1"/>
+                                    <constraint firstItem="Qwk-0q-spy" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="leading" id="Lu3-do-cfS"/>
+                                    <constraint firstAttribute="width" constant="60" id="NHi-dB-gVP"/>
+                                    <constraint firstItem="Qwk-0q-spy" firstAttribute="top" secondItem="QMB-6m-BDG" secondAttribute="top" id="P8Y-zI-sbf"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -59,32 +56,38 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grapes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-CC-tgy">
-                                <rect key="frame" x="54" y="5" width="45.666666666666657" height="16.333333333333332"/>
-                                <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
+                                <rect key="frame" x="64" y="5" width="49.666666666666657" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.5" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkw-8B-MkZ">
-                                <rect key="frame" x="54.000000000000007" y="23.333333333333332" width="30.333333333333336" height="13.999999999999996"/>
-                                <fontDescription key="fontDescription" name="Mulish-Regular" family="Mulish" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="64" y="24" width="32.666666666666657" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-HW-BKA">
-                                <rect key="frame" x="165" y="6" width="116" height="34"/>
+                                <rect key="frame" x="165" y="9" width="116" height="34"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lZ-G6-Neo" customClass="APBindingButton" customModule="iKhokhaFruits" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lZ-G6-Neo" customClass="APBindingButton" customModule="iKhokhaFruits" customModuleProvider="target">
                                         <rect key="frame" x="8" y="7" width="28" height="20"/>
+                                        <color key="backgroundColor" red="0.50196078431372548" green="0.49803921568627452" blue="0.49803921568627452" alpha="0.49437253838343337" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="28" id="9T5-5g-lGb"/>
-                                            <constraint firstAttribute="height" constant="20" id="R7I-QH-Pee"/>
+                                            <constraint firstAttribute="width" constant="28" id="XBT-By-V0Z"/>
+                                            <constraint firstAttribute="height" constant="20" id="yrS-eL-6CJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <imageReference key="image" image="minus" catalog="system" symbolScale="small"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" name="AccentColor"/>
-                                        </buttonConfiguration>
+                                        <color key="tintColor" white="0.99415349639999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="minus" catalog="system">
+                                            <color key="titleColor" white="0.99415349639999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" name="gray"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pw-lX-bHP">
                                         <rect key="frame" x="36" y="8" width="44" height="18"/>
@@ -94,32 +97,38 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-3z-gHA" customClass="APBindingButton" customModule="iKhokhaFruits" customModuleProvider="target">
                                         <rect key="frame" x="80" y="7" width="28" height="20"/>
+                                        <color key="backgroundColor" red="0.50196078431372548" green="0.49803921568627452" blue="0.49803921568627452" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="28" id="DhP-zk-5rt"/>
-                                            <constraint firstAttribute="height" constant="20" id="nrC-O0-vO2"/>
+                                            <constraint firstAttribute="height" constant="20" id="OhV-Zb-qCg"/>
+                                            <constraint firstAttribute="width" constant="28" id="X32-px-cfb"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
+                                        <color key="tintColor" white="0.99415349639999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <imageReference key="image" image="plus" catalog="system" symbolScale="small"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" name="AccentColor"/>
-                                        </buttonConfiguration>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="faded_green"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Tek-3z-gHA" secondAttribute="trailing" constant="8" id="15U-cB-ZFd"/>
-                                    <constraint firstAttribute="height" constant="34" id="2hj-Fl-vqo"/>
-                                    <constraint firstItem="Tek-3z-gHA" firstAttribute="leading" secondItem="6Pw-lX-bHP" secondAttribute="trailing" id="6aW-ep-cI1"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Pw-lX-bHP" secondAttribute="bottom" constant="8" id="92c-za-nBk"/>
-                                    <constraint firstAttribute="width" constant="116" id="9Nh-GK-NCr"/>
-                                    <constraint firstItem="0lZ-G6-Neo" firstAttribute="leading" secondItem="M3g-HW-BKA" secondAttribute="leading" constant="8" id="9fR-Rw-ur6"/>
-                                    <constraint firstItem="0lZ-G6-Neo" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="7" id="ctx-PQ-g6z"/>
-                                    <constraint firstItem="6Pw-lX-bHP" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="8" id="gOf-OJ-F9q"/>
-                                    <constraint firstItem="Tek-3z-gHA" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="7" id="hXd-4I-Wnc"/>
-                                    <constraint firstAttribute="bottom" secondItem="0lZ-G6-Neo" secondAttribute="bottom" constant="7" id="q1r-xB-NQ7"/>
-                                    <constraint firstAttribute="bottom" secondItem="Tek-3z-gHA" secondAttribute="bottom" constant="7" id="vhe-qG-bJq"/>
-                                    <constraint firstItem="6Pw-lX-bHP" firstAttribute="leading" secondItem="0lZ-G6-Neo" secondAttribute="trailing" id="xIJ-kC-L0L"/>
+                                    <constraint firstItem="6Pw-lX-bHP" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="8" id="3sJ-UA-1L1"/>
+                                    <constraint firstItem="Tek-3z-gHA" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="7" id="6nd-AG-LyK"/>
+                                    <constraint firstAttribute="bottom" secondItem="0lZ-G6-Neo" secondAttribute="bottom" constant="7" id="DW3-Yz-OOf"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Pw-lX-bHP" secondAttribute="bottom" constant="8" id="Lhr-sZ-ODV"/>
+                                    <constraint firstItem="Tek-3z-gHA" firstAttribute="leading" secondItem="6Pw-lX-bHP" secondAttribute="trailing" id="N63-Pa-uI5"/>
+                                    <constraint firstAttribute="height" constant="34" id="Pj8-yL-kIw"/>
+                                    <constraint firstItem="6Pw-lX-bHP" firstAttribute="leading" secondItem="0lZ-G6-Neo" secondAttribute="trailing" id="RM1-1G-SHI"/>
+                                    <constraint firstItem="0lZ-G6-Neo" firstAttribute="leading" secondItem="M3g-HW-BKA" secondAttribute="leading" constant="8" id="UFc-fC-6vI"/>
+                                    <constraint firstItem="0lZ-G6-Neo" firstAttribute="top" secondItem="M3g-HW-BKA" secondAttribute="top" constant="7" id="X6r-7D-dvB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tek-3z-gHA" secondAttribute="bottom" constant="7" id="Ymi-Sc-MAk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tek-3z-gHA" secondAttribute="trailing" constant="8" id="sj8-yM-zoP"/>
+                                    <constraint firstAttribute="width" constant="116" id="wNB-5O-YaE"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -128,19 +137,23 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.99415349635948125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="M3g-HW-BKA" secondAttribute="trailing" constant="8" id="0jz-PJ-H0I"/>
-                            <constraint firstItem="M3g-HW-BKA" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="6" id="6Qn-Ob-K06"/>
-                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="trailing" constant="8" symbolic="YES" id="BIM-IB-oYv"/>
-                            <constraint firstItem="HXV-CC-tgy" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="5" id="YvO-dt-l6Z"/>
-                            <constraint firstAttribute="bottom" secondItem="fkw-8B-MkZ" secondAttribute="bottom" constant="8" id="ZSZ-u1-8xD"/>
-                            <constraint firstItem="QMB-6m-BDG" firstAttribute="leading" secondItem="XWc-ce-WF5" secondAttribute="leading" id="dVK-6r-bmf"/>
-                            <constraint firstAttribute="bottom" secondItem="M3g-HW-BKA" secondAttribute="bottom" constant="20" symbolic="YES" id="lOe-vF-hJZ"/>
-                            <constraint firstAttribute="bottom" secondItem="QMB-6m-BDG" secondAttribute="bottom" id="mMx-WO-fMn"/>
-                            <constraint firstItem="HXV-CC-tgy" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="trailing" constant="8" symbolic="YES" id="mig-8h-Spo"/>
-                            <constraint firstItem="QMB-6m-BDG" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" id="vSL-qv-ogm"/>
-                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="top" secondItem="HXV-CC-tgy" secondAttribute="bottom" constant="2" id="zwg-2a-WJx"/>
+                            <constraint firstAttribute="trailing" secondItem="M3g-HW-BKA" secondAttribute="trailing" constant="8" id="14I-cv-Lfl"/>
+                            <constraint firstItem="QMB-6m-BDG" firstAttribute="leading" secondItem="XWc-ce-WF5" secondAttribute="leading" id="1ac-N3-7kg"/>
+                            <constraint firstAttribute="bottom" secondItem="M3g-HW-BKA" secondAttribute="bottom" constant="10" id="6qF-AD-Jqi"/>
+                            <constraint firstItem="HXV-CC-tgy" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="5" id="Xz5-Wo-tGp"/>
+                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="top" secondItem="HXV-CC-tgy" secondAttribute="bottom" constant="2" id="btO-8x-qQ4"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="cY8-fO-Zwo"/>
+                            <constraint firstItem="M3g-HW-BKA" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="9" id="f9g-SX-23D"/>
+                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="top" secondItem="HXV-CC-tgy" secondAttribute="bottom" constant="2" id="fOz-sx-xZ8"/>
+                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="top" secondItem="HXV-CC-tgy" secondAttribute="bottom" constant="2" id="gdl-dQ-26a"/>
+                            <constraint firstItem="HXV-CC-tgy" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="trailing" constant="4" id="jMQ-Cv-viI"/>
+                            <constraint firstAttribute="bottom" secondItem="QMB-6m-BDG" secondAttribute="bottom" id="mND-tT-4XH"/>
+                            <constraint firstItem="HXV-CC-tgy" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="5" id="t4b-yy-fQI"/>
+                            <constraint firstAttribute="height" constant="53" id="uTM-CQ-s7m"/>
+                            <constraint firstItem="fkw-8B-MkZ" firstAttribute="leading" secondItem="QMB-6m-BDG" secondAttribute="trailing" constant="4" id="vMV-ju-l1t"/>
+                            <constraint firstItem="QMB-6m-BDG" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" id="zM6-GC-fjY"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -166,11 +179,11 @@
                 <outlet property="minusProductBtn" destination="0lZ-G6-Neo" id="0Os-x0-sff"/>
                 <outlet property="plusProductBtn" destination="Tek-3z-gHA" id="GLf-8A-7ao"/>
             </connections>
-            <point key="canvasLocation" x="-118.32061068702289" y="-35.91549295774648"/>
+            <point key="canvasLocation" x="-118.32061068702289" y="-27.112676056338028"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="5" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="fruits2" width="169.66667175292969" height="79"/>
         <image name="minus" catalog="system" width="128" height="26"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
@@ -178,6 +191,9 @@
         </namedColor>
         <namedColor name="faded_green">
             <color red="0.92549019607843142" green="1" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

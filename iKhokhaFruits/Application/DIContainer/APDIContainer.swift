@@ -27,4 +27,16 @@ extension APDIContainer {
         let dependencies = APHomeDIContainer.Dependencies()
         return APHomeDIContainer(dependencies: dependencies)
     }
+    
+    ///Create Cart DIContainer
+    func makeCartDIContainer() -> APCartDIContainer {
+        let dependencies = APCartDIContainer.Dependencies()
+        return APCartDIContainer(dependencies: dependencies)
+    }
+    
+    ///Create PRODUCT DETAILS DIContainer
+    func makePDetailsDIContainer() -> APProductDetailsDIContainer {
+        let dependencies = APProductDetailsDIContainer.Dependencies()
+        return APProductDetailsDIContainer(dependencies: dependencies)
+    }
 }

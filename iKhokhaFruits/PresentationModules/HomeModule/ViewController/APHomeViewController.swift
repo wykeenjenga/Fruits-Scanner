@@ -13,7 +13,18 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
     
     @IBOutlet weak var profile: APBindingButton!
     
-    @IBOutlet weak var cartBtn: APBindingButton!
+    @IBOutlet weak var cartBtn: APBindingButton!{
+        didSet{
+            self.cartBtn.bind {
+                let cartVC = Accessors.AppDelegate.delegate.appDiContainer.makeCartDIContainer().makeCartViewController()
+                cartVC.modalTransitionStyle = .coverVertical
+                cartVC.modalPresentationStyle = .fullScreen
+                cartVC.products = self.viewModel.productsData.value ?? []
+                cartVC.barCodes = self.viewModel.scannedBarcodes.value ?? []
+                self.present(cartVC, animated: true)
+            }
+        }
+    }
     
     @IBOutlet weak var scannerView: UIView!
     
@@ -24,7 +35,18 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
         }
     }
     
-    @IBOutlet weak var checkOutBtn: APBindingButton!
+    @IBOutlet weak var checkOutBtn: APBindingButton!{
+        didSet{
+            self.checkOutBtn.bind {
+                let cartVC = Accessors.AppDelegate.delegate.appDiContainer.makeCartDIContainer().makeCartViewController()
+                cartVC.modalTransitionStyle = .coverVertical
+                cartVC.modalPresentationStyle = .fullScreen
+                cartVC.products = self.viewModel.productsData.value ?? []
+                cartVC.barCodes = self.viewModel.scannedBarcodes.value ?? []
+                self.present(cartVC, animated: true)
+            }
+        }
+    }
     
     @IBOutlet weak var frameView: UIView!
     
@@ -100,6 +122,7 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
                         self?.hideHUD()
                     }
                     self?.updateCart()
+                    
                     break
                 case .error:
                     break
@@ -116,11 +139,18 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
     func updateCart(){
         let count = self.viewModel.productsData.value?.count
         self.cartBtn.badgeValue = "\(count ?? 0)"
+        self.tableView.reloadData()
     }
     
 }
 
-extension APHomeViewController: UITableViewDataSource, UITableViewDelegate{
+extension APHomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+}
+
+extension APHomeViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = self.viewModel.productsData.value?.count ?? 0
@@ -132,20 +162,43 @@ extension APHomeViewController: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView[APProductsTableViewCell.self, indexPath]
         let products = self.viewModel.productsData.value?[indexPath.row]
         
-        cell.fruitPrice.text = "$\(String(describing: products?.price!))"
+        let index = indexPath.row
+        cell.index = index
+        cell.plusProductBtn.tag = index
+        cell.minusProductBtn.tag = index
+        
+        if let price = products?.price{
+            cell.fruitPrice.text = "$\(price)"
+        }
+        
         cell.fruitTitle.text = products?.description
         cell.fruitCount.text = "\(products?.count ?? 1)"
         
         let endPoint = APAPIEndPoints.Requests.getProductsImagesEndPoint()
-        let imageUrl = URL(string: "\(endPoint.appendingPathExtension("\(String(describing: products?.image))?alt=media"))")!
-        
-        print(".......UEL..\(imageUrl)")
-        
-        cell.fruitImage.setImageUrl(url: imageUrl)
+        if let imageUrl = products?.image{
+            let url = endPoint.absoluteString.appending("\(imageUrl)?alt=media")
+            cell.fruitImage.setImageUrl(url: URL(string: url)!)
+        }
         
         return cell
     }
     
-
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        print("THE INDEX IS....\(index)")
+        let product = self.viewModel.productsData.value?[index]
+        let pDVC = Accessors.AppDelegate.delegate.appDiContainer.makePDetailsDIContainer().makePDetailViewController()
+        pDVC.price = product?.price
+        pDVC.namee = product?.description
+        if let imageUrl = product?.image{
+            let endPoint = APAPIEndPoints.Requests.getProductsImagesEndPoint()
+            let url = endPoint.absoluteString.appending("\(imageUrl)?alt=media")
+            pDVC.image = url
+        }
+        
+        pDVC.modalTransitionStyle = .coverVertical
+        pDVC.modalPresentationStyle = .fullScreen
+        self.present(pDVC, animated: true)
+    }
 }

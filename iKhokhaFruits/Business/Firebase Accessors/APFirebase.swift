@@ -57,13 +57,14 @@ class APFirebase {
                     if let data = data {
                         if let json = String(data: data, encoding: .utf8) {
                             let result = try JSONDecoder().decode([String: APProductsModel].self, from: data)
-                            for (key, value) in result {
-                                if key == barCode{
-                                    print("DATA IS>>>>>",key, value)
-                                    completion(value, nil)
+                            DispatchQueue.main.async {
+                                for (key, value) in result {
+                                    if key == barCode{
+                                        print("DATA IS>>>>>",key, value)
+                                        completion(value, nil)
+                                    }
                                 }
                             }
-                            
                             }
                     }
                 } catch {

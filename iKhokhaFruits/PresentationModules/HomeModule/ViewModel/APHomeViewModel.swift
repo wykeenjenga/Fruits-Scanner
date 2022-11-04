@@ -6,7 +6,7 @@
 //  Copyright © 2022 iKhokha. All rights reserved.
 //
 
-//https://firebasestorage.googleapis.com/v0/b/the-busy-shop.appspot.com/o/apple.jpg?alt=media
+///https://firebasestorage.googleapis.com/v0/b/the-busy-shop.appspot.com/o/apple.jpg?alt=media
 
 import Foundation
 import Firebase

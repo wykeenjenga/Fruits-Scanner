@@ -26,6 +26,14 @@
 		0B3677842913C039009A0D71 /* APBarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677832913C039009A0D71 /* APBarcodeScanner.swift */; };
 		0B3677882913F46C009A0D71 /* APProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */; };
 		0B3677892913F46C009A0D71 /* APProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */; };
+		0B6B29142914F34900904752 /* APCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B29122914F34900904752 /* APCartViewController.swift */; };
+		0B6B29152914F34900904752 /* APCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6B29132914F34900904752 /* APCartViewController.xib */; };
+		0B6B29192914F6D000904752 /* APCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B29182914F6D000904752 /* APCartViewModel.swift */; };
+		0B6B291C2914F9CA00904752 /* CartDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B291B2914F9CA00904752 /* CartDiContainer.swift */; };
+		0B6B291F291536C400904752 /* APPDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B291E291536C400904752 /* APPDFCreator.swift */; };
+		0B6B292429153B8900904752 /* APProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B292229153B8900904752 /* APProductDetailViewController.swift */; };
+		0B6B292529153B8900904752 /* APProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6B292329153B8900904752 /* APProductDetailViewController.xib */; };
+		0B6B2928291540A200904752 /* ProductDetailsDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B2927291540A200904752 /* ProductDetailsDIContainer.swift */; };
 		0BAC2EE92914DD2600D314A2 /* APExtension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAC2EE82914DD2600D314A2 /* APExtension+UIImage.swift */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
@@ -93,6 +101,14 @@
 		0B3677832913C039009A0D71 /* APBarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBarcodeScanner.swift; sourceTree = "<group>"; };
 		0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsTableViewCell.swift; sourceTree = "<group>"; };
 		0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APProductsTableViewCell.xib; sourceTree = "<group>"; };
+		0B6B29122914F34900904752 /* APCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCartViewController.swift; sourceTree = "<group>"; };
+		0B6B29132914F34900904752 /* APCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APCartViewController.xib; sourceTree = "<group>"; };
+		0B6B29182914F6D000904752 /* APCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCartViewModel.swift; sourceTree = "<group>"; };
+		0B6B291B2914F9CA00904752 /* CartDiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDiContainer.swift; sourceTree = "<group>"; };
+		0B6B291E291536C400904752 /* APPDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPDFCreator.swift; sourceTree = "<group>"; };
+		0B6B292229153B8900904752 /* APProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductDetailViewController.swift; sourceTree = "<group>"; };
+		0B6B292329153B8900904752 /* APProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APProductDetailViewController.xib; sourceTree = "<group>"; };
+		0B6B2927291540A200904752 /* ProductDetailsDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsDIContainer.swift; sourceTree = "<group>"; };
 		0BAC2EE82914DD2600D314A2 /* APExtension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APExtension+UIImage.swift"; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +327,81 @@
 			path = ViewCells;
 			sourceTree = "<group>";
 		};
+		0B6B29102914F30100904752 /* ProductDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B292129153B6B00904752 /* ViewController */,
+				0B6B292029153B6300904752 /* ViewModel */,
+			);
+			path = ProductDetailsModule;
+			sourceTree = "<group>";
+		};
+		0B6B29112914F31B00904752 /* CartModule */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B29172914F69E00904752 /* ViewModel */,
+				0B6B29162914F34D00904752 /* ViewController */,
+			);
+			path = CartModule;
+			sourceTree = "<group>";
+		};
+		0B6B29162914F34D00904752 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B29122914F34900904752 /* APCartViewController.swift */,
+				0B6B29132914F34900904752 /* APCartViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0B6B29172914F69E00904752 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B29182914F6D000904752 /* APCartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B6B291A2914F9AD00904752 /* CartDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B291B2914F9CA00904752 /* CartDiContainer.swift */,
+			);
+			path = CartDIContainer;
+			sourceTree = "<group>";
+		};
+		0B6B291D291536AB00904752 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B291E291536C400904752 /* APPDFCreator.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		0B6B292029153B6300904752 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B6B292129153B6B00904752 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B292229153B8900904752 /* APProductDetailViewController.swift */,
+				0B6B292329153B8900904752 /* APProductDetailViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0B6B29262915407B00904752 /* ProductDetailDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B2927291540A200904752 /* ProductDetailsDIContainer.swift */,
+			);
+			path = ProductDetailDIContainer;
+			sourceTree = "<group>";
+		};
 		65FD24E1155C3264FE18AB65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +524,8 @@
 			isa = PBXGroup;
 			children = (
 				CE4F9945290E761D00E16A1C /* APDIContainer.swift */,
+				0B6B29262915407B00904752 /* ProductDetailDIContainer */,
+				0B6B291A2914F9AD00904752 /* CartDIContainer */,
 				0B36776229138BD0009A0D71 /* HardwallDIContainer */,
 				0B36777E2913AFD8009A0D71 /* HomeDIContainer */,
 			);
@@ -467,6 +560,7 @@
 		CE928E6D290A7F6D00BA1090 /* CustomTypes */ = {
 			isa = PBXGroup;
 			children = (
+				0B6B291D291536AB00904752 /* PDF */,
 				0B3677822913C018009A0D71 /* BarcodeScanner */,
 				0B367768291392EF009A0D71 /* BrokenRules */,
 				0B36776529139223009A0D71 /* APBindingTextField */,
@@ -481,6 +575,8 @@
 		CE928E6F290A7F8D00BA1090 /* PresentationModules */ = {
 			isa = PBXGroup;
 			children = (
+				0B6B29112914F31B00904752 /* CartModule */,
+				0B6B29102914F30100904752 /* ProductDetailsModule */,
 				0B36776B291399E5009A0D71 /* HomeModule */,
 				CE4F996C290E9AF500E16A1C /* HardWallModule */,
 				0B36775E291384F2009A0D71 /* OnboardingModule */,
@@ -724,12 +820,14 @@
 			files = (
 				0B36777129139D65009A0D71 /* APHomeViewController.xib in Resources */,
 				CE4F9972290E9B5B00E16A1C /* APHardWallViewController.xib in Resources */,
+				0B6B292529153B8900904752 /* APProductDetailViewController.xib in Resources */,
 				0B36775D2913843B009A0D71 /* Main.storyboard in Resources */,
 				0B36775C2913843B009A0D71 /* LaunchScreen.storyboard in Resources */,
 				0B3677892913F46C009A0D71 /* APProductsTableViewCell.xib in Resources */,
 				CE4F996B290E8AD800E16A1C /* GoogleService-Info.plist in Resources */,
 				0B36777429139F0E009A0D71 /* beep.mp3 in Resources */,
 				CEB565B42909A4FD00C47028 /* Assets.xcassets in Resources */,
+				0B6B29152914F34900904752 /* APCartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,18 +955,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6B292429153B8900904752 /* APProductDetailViewController.swift in Sources */,
 				CE4F9968290E884000E16A1C /* APAPIGateway.swift in Sources */,
 				0B36776A2913930A009A0D71 /* APBRokenRules.swift in Sources */,
 				CE4F9962290E86B800E16A1C /* Accessors.swift in Sources */,
 				0B3677612913853D009A0D71 /* APOnboardViewController.swift in Sources */,
 				0B36777D2913AC5B009A0D71 /* APHardWallViewModel.swift in Sources */,
 				CE4F995D290E7F5200E16A1C /* APExtension+UIViewController.swift in Sources */,
+				0B6B29142914F34900904752 /* APCartViewController.swift in Sources */,
+				0B6B29192914F6D000904752 /* APCartViewModel.swift in Sources */,
 				0B367756291380FE009A0D71 /* CustomTextField.swift in Sources */,
 				CE4F9950290E7E0400E16A1C /* HUDLoaderProtocol.swift in Sources */,
 				CE4F995C290E7F5200E16A1C /* APExtension+UITableViewCell.swift in Sources */,
 				CE4F9971290E9B5B00E16A1C /* APHardWallViewController.swift in Sources */,
 				CE4F994B290E7D4000E16A1C /* APConstants.swift in Sources */,
 				0B3677882913F46C009A0D71 /* APProductsTableViewCell.swift in Sources */,
+				0B6B291F291536C400904752 /* APPDFCreator.swift in Sources */,
 				CE928E7A290A847E00BA1090 /* APError.swift in Sources */,
 				CE4F9965290E86F900E16A1C /* APFirebase.swift in Sources */,
 				0B3677802913AFFD009A0D71 /* HomeDIContainer.swift in Sources */,
@@ -886,10 +988,12 @@
 				0B3677762913A408009A0D71 /* APHomeViewModel.swift in Sources */,
 				0B36776429138BED009A0D71 /* HardwallDiContainer.swift in Sources */,
 				CE4F9966290E86F900E16A1C /* APFirebaseFactory.swift in Sources */,
+				0B6B2928291540A200904752 /* ProductDetailsDIContainer.swift in Sources */,
 				CE4F994E290E7DCD00E16A1C /* APProtocols.swift in Sources */,
 				0B3677842913C039009A0D71 /* APBarcodeScanner.swift in Sources */,
 				CE4F9952290E7E2600E16A1C /* StoryboardInstantiable.swift in Sources */,
 				CEB565AB2909A4F800C47028 /* APAppDelegate.swift in Sources */,
+				0B6B291C2914F9CA00904752 /* CartDiContainer.swift in Sources */,
 				0B36777A2913A7C4009A0D71 /* APProductsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
