@@ -19,6 +19,14 @@ class APProductDetailViewController: UIViewController {
     var namee: String?
     var price: Double?
     
+    @IBOutlet weak var backBtn: APBindingButton!{
+        didSet{
+            self.backBtn.bind {
+                self.dismiss(animated: true)
+            }
+        }
+    }
+    
     
     @IBOutlet weak var cartBtn: APBindingButton!{
         didSet{
@@ -45,7 +53,7 @@ class APProductDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         self.productName.text = self.namee
         self.productImage.setImageUrl(url: URL(string: self.image!)!)
-        self.productPrice.text = "\(self.price!)"
+        self.productPrice.text = "$\(self.price!)"
     }
 
 }

@@ -98,7 +98,6 @@ class APCartViewController: BaseViewController {
     
     func sharePDF(){
         if let path = self.viewModel.pdfUrl.value{
-            print("THE PDF URL...=\(path)")
             let fileManager = FileManager.default
 
             if fileManager.fileExists(atPath: path!.path) {
@@ -109,9 +108,8 @@ class APCartViewController: BaseViewController {
                 print("document was not found")
             }
         }
-        
-        
     }
+    
 
 }
 
@@ -154,11 +152,21 @@ extension APCartViewController: UITableViewDataSource{
         
         return cell
     }
-    
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
+        let product = self.viewModel.productsData.value?[index]
+        let pDVC = Accessors.AppDelegate.delegate.appDiContainer.makePDetailsDIContainer().makePDetailViewController()
+        pDVC.price = product?.price
+        pDVC.namee = product?.description
+        if let imageUrl = product?.image{
+            let endPoint = APAPIEndPoints.Requests.getProductsImagesEndPoint()
+            let url = endPoint.absoluteString.appending("\(imageUrl)?alt=media")
+            pDVC.image = url
+        }
         
-        print("THE INDEX IS....\(index)")
+        pDVC.modalTransitionStyle = .coverVertical
+        pDVC.modalPresentationStyle = .fullScreen
+        self.present(pDVC, animated: true)
     }
 }

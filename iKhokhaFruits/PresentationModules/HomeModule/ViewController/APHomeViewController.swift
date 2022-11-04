@@ -67,7 +67,6 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //self.viewModel.
         self.bindViewModel()
         self.tableView.reloadData()
     }
@@ -82,23 +81,22 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
         view.viewModel = viewModel
         return view
     }
-   
-    var beepEffect: AVAudioPlayer?
     
     func scannerDidCaptureCode(barCode: String) {
         let codes = viewModel.scannedBarcodes.value
         if let barcodesArray = codes, barcodesArray.contains(barCode){
-            print("The code is already registered,.....\(String(describing: codes))")
+            print("The code is already registered ADD Count For.....\(String(describing: codes))")
             ///show alert to add that item twice
+            
         }else{
             self.viewModel.scannedBarcodes.value?.append(barCode)
-            print("Code is not registeres......\(String(describing: codes))")
             self.beep()
             self.viewModel.getProductDetails(barCode: barCode)
         }
 
     }
     
+    var beepEffect: AVAudioPlayer?
     func beep(){
         let path = Bundle.main.path(forResource: "beep.mp3", ofType:nil)!
         let url = URL(fileURLWithPath: path)
@@ -110,6 +108,8 @@ class APHomeViewController: BaseViewController, APBarcodeScannerDelegate{
             print("No such fucking file -):")
         }
     }
+    
+    
     
     func bindViewModel(){
         self.viewModel.route.bind = { [weak self] route in
@@ -186,7 +186,6 @@ extension APHomeViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-        print("THE INDEX IS....\(index)")
         let product = self.viewModel.productsData.value?[index]
         let pDVC = Accessors.AppDelegate.delegate.appDiContainer.makePDetailsDIContainer().makePDetailViewController()
         pDVC.price = product?.price

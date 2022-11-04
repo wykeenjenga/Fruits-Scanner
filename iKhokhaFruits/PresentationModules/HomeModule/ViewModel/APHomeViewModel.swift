@@ -11,6 +11,7 @@
 import Foundation
 import Firebase
 import Alamofire
+import AVFoundation
 
 enum APHomeViewModelRoute {
     case initial
@@ -60,4 +61,5 @@ extension APHomeViewModel{
         }
         
     }
+
 }

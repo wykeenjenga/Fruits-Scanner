@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APProductDetailViewController" customModule="iKhokhaFruits" customModuleProvider="target">
             <connections>
+                <outlet property="backBtn" destination="2EF-pv-5uN" id="yVC-6j-DHI"/>
                 <outlet property="cartBtn" destination="ZXB-ru-xco" id="sZx-LF-0xP"/>
                 <outlet property="productDescription" destination="dla-3b-EjA" id="ifN-LY-xiC"/>
                 <outlet property="productImage" destination="Xai-Fh-4vB" id="3Yt-Yg-DHh"/>
