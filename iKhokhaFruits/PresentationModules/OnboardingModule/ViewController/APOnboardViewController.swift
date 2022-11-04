@@ -38,12 +38,13 @@ class APOnboardViewController: UIViewController {
         
         let isOnboardingShown = UserDefaults.standard.bool(forKey: "isOnboarding")
         if isOnboardingShown{
-            let user =  Auth.auth().currentUser//APFirebaseFactory.auth().currentUser
-            if user != nil{
-                navigateHome()
-            }else{
-                navigateToHardWall()
-            }
+//            let user = //APFirebaseFactory.auth().currentUser
+//            if user != nil{
+//                navigateHome()
+//            }else{
+//                navigateToHardWall()
+//            }
+            navigateHome()
         }
     }
     

@@ -34,6 +34,7 @@ class APAPIGateway {
     }
     
     func signInUser(with email: String, password: String, completion: @escaping (Result<Bool,WrappedError>)->()) {
+
         firebase.signIn(with: email, password: password) { result in
             switch result {
             case .success(_):
@@ -48,5 +49,9 @@ class APAPIGateway {
         firebase.signUp(with: email, password: password) { (result) in
             completion(result)
         }
+    }
+    
+    func getProductDetail(barCode: String, completion: @escaping (APProductsModel, Error?) -> Void){
+        firebase.getProductDetail(barCode: barCode, completion: completion)
     }
 }

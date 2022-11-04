@@ -61,7 +61,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="wpW-C7-v9c" firstAttribute="centerX" secondItem="ECS-Ke-PQU" secondAttribute="centerX" id="JWz-JK-eN2"/>
                         <constraint firstAttribute="trailing" secondItem="Aue-st-3KD" secondAttribute="trailing" constant="8" id="K4u-IF-Ohp"/>
@@ -133,7 +133,7 @@
                             </buttonConfiguration>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="zn1-y2-XX9" secondAttribute="trailing" constant="8" id="JyJ-hX-X6E"/>
                         <constraint firstAttribute="bottom" secondItem="gaM-rY-90u" secondAttribute="bottom" constant="-13" id="OVW-G1-PFD"/>

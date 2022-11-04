@@ -12,8 +12,10 @@ class APProductsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var fruitImage: UIImageView!
     @IBOutlet weak var fruitTitle: UILabel!
-    @IBOutlet weak var fruitDescription: UILabel!
-    
+    @IBOutlet weak var fruitPrice: UILabel!
+    @IBOutlet weak var fruitCount: UILabel!
+    @IBOutlet weak var minusProductBtn: APBindingButton!
+    @IBOutlet weak var plusProductBtn: APBindingButton!
     
     
     override func awakeFromNib() {

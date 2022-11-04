@@ -7,7 +7,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-ce-WF5">
-                        <rect key="frame" x="0.0" y="0.0" width="289" height="48.333333333333336"/>
+                        <rect key="frame" x="0.0" y="0.0" width="289" height="45.333333333333336"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMB-6m-BDG">
                                 <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
@@ -44,7 +43,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Qwk-0q-spy" secondAttribute="bottom" id="1rI-vj-Ut1"/>
                                     <constraint firstAttribute="height" constant="46" id="H3R-pW-eeD"/>
@@ -60,13 +59,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grapes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-CC-tgy">
-                                <rect key="frame" x="54" y="5" width="48" height="18"/>
+                                <rect key="frame" x="54" y="5" width="45.666666666666657" height="16.333333333333332"/>
                                 <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.5" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkw-8B-MkZ">
-                                <rect key="frame" x="53.999999999999993" y="24.999999999999996" width="31.666666666666664" height="15.333333333333332"/>
+                                <rect key="frame" x="54.000000000000007" y="23.333333333333332" width="30.333333333333336" height="13.999999999999996"/>
                                 <fontDescription key="fontDescription" name="Mulish-Regular" family="Mulish" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +86,7 @@
                                             <color key="baseBackgroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pw-lX-bHP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pw-lX-bHP">
                                         <rect key="frame" x="36" y="8" width="44" height="18"/>
                                         <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,7 +106,7 @@
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="faded_green"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Tek-3z-gHA" secondAttribute="trailing" constant="8" id="15U-cB-ZFd"/>
                                     <constraint firstAttribute="height" constant="34" id="2hj-Fl-vqo"/>
@@ -129,7 +128,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.99415349635948125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="M3g-HW-BKA" secondAttribute="trailing" constant="8" id="0jz-PJ-H0I"/>
                             <constraint firstItem="M3g-HW-BKA" firstAttribute="top" secondItem="XWc-ce-WF5" secondAttribute="top" constant="6" id="6Qn-Ob-K06"/>
@@ -150,6 +149,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="XWc-ce-WF5" secondAttribute="trailing" id="4PA-UO-0Ru"/>
                     <constraint firstAttribute="bottom" secondItem="XWc-ce-WF5" secondAttribute="bottom" id="Gov-NB-fgM"/>
@@ -159,9 +159,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="fruitDescription" destination="fkw-8B-MkZ" id="ZQO-pt-IPZ"/>
+                <outlet property="fruitCount" destination="6Pw-lX-bHP" id="oDA-NA-5dJ"/>
                 <outlet property="fruitImage" destination="Qwk-0q-spy" id="Ve6-aa-6cY"/>
+                <outlet property="fruitPrice" destination="fkw-8B-MkZ" id="P4h-UL-N2U"/>
                 <outlet property="fruitTitle" destination="HXV-CC-tgy" id="fcH-9U-Q8X"/>
+                <outlet property="minusProductBtn" destination="0lZ-G6-Neo" id="0Os-x0-sff"/>
+                <outlet property="plusProductBtn" destination="Tek-3z-gHA" id="GLf-8A-7ao"/>
             </connections>
             <point key="canvasLocation" x="-118.32061068702289" y="-35.91549295774648"/>
         </tableViewCell>
@@ -173,8 +176,8 @@
         <namedColor name="AccentColor">
             <color red="0.30980392156862746" green="0.72156862745098038" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="faded_green">
+            <color red="0.92549019607843142" green="1" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

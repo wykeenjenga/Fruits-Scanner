@@ -105,12 +105,13 @@ class APBarcodeScanner: UIView, AVCaptureVideoDataOutputSampleBufferDelegate {
             // Error handling
             return
           }
+            
           // Recognized barcodes
             for barcode in features {
-                self.delegate?.scannerDidCaptureCode(barCode: barcode.displayValue ?? "")
+                self.delegate?.scannerDidCaptureCode(barCode: barcode.displayValue!)
+                //self.stopScanning()
             }
         }
-        
     }
     
     func stopScanning(){

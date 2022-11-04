@@ -17,12 +17,14 @@ struct APProductsModel: Codable {
     }
     
     var image: String?
-    var price: String?
+    var price: Double?
     var description: String?
+    var barCode: String?
+    var count: Int?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        price = try container.decodeIfPresent(String.self, forKey: .price)
+        price = try container.decodeIfPresent(Double.self, forKey: .price)
         image = try container.decodeIfPresent(String.self, forKey: .image)
         description = try container.decodeIfPresent(String.self, forKey: .description)
     }

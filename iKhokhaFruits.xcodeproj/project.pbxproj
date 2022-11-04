@@ -26,6 +26,7 @@
 		0B3677842913C039009A0D71 /* APBarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677832913C039009A0D71 /* APBarcodeScanner.swift */; };
 		0B3677882913F46C009A0D71 /* APProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */; };
 		0B3677892913F46C009A0D71 /* APProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */; };
+		0BAC2EE92914DD2600D314A2 /* APExtension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAC2EE82914DD2600D314A2 /* APExtension+UIImage.swift */; };
 		5B53FD9282DB67E89518E195 /* Pods_iKhokhaFruitsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27F1F0381B31C830C611923 /* Pods_iKhokhaFruitsTests.framework */; };
 		CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9943290E6D9900E16A1C /* APAppConfigurations.swift */; };
 		CE4F9946290E761D00E16A1C /* APDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F9945290E761D00E16A1C /* APDIContainer.swift */; };
@@ -92,6 +93,7 @@
 		0B3677832913C039009A0D71 /* APBarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBarcodeScanner.swift; sourceTree = "<group>"; };
 		0B3677862913F46C009A0D71 /* APProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APProductsTableViewCell.swift; sourceTree = "<group>"; };
 		0B3677872913F46C009A0D71 /* APProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APProductsTableViewCell.xib; sourceTree = "<group>"; };
+		0BAC2EE82914DD2600D314A2 /* APExtension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APExtension+UIImage.swift"; sourceTree = "<group>"; };
 		43E1EAB6A1A106B0FF6F86E8 /* Pods-iKhokhaFruitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruitsTests.debug.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruitsTests/Pods-iKhokhaFruitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKhokhaFruits.release.xcconfig"; path = "Target Support Files/Pods-iKhokhaFruits/Pods-iKhokhaFruits.release.xcconfig"; sourceTree = "<group>"; };
 		4DC7AF60A3F57F2F108EB621 /* Pods_iKhokhaFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKhokhaFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,6 +515,7 @@
 				CE4F9958290E7F5100E16A1C /* APExtension+UITableViewCell.swift */,
 				CE4F9959290E7F5200E16A1C /* APExtension+UIViewController.swift */,
 				CE4F9957290E7F5000E16A1C /* APExtension+Window.swift */,
+				0BAC2EE82914DD2600D314A2 /* APExtension+UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -872,6 +875,7 @@
 				CE4F995A290E7F5200E16A1C /* APExtension+UITableView.swift in Sources */,
 				CE928E7F290A84B000BA1090 /* APDynamicType.swift in Sources */,
 				CE4F995B290E7F5200E16A1C /* APExtension+Window.swift in Sources */,
+				0BAC2EE92914DD2600D314A2 /* APExtension+UIImage.swift in Sources */,
 				CE4F9944290E6D9900E16A1C /* APAppConfigurations.swift in Sources */,
 				0B36777029139D65009A0D71 /* APHomeViewController.swift in Sources */,
 				CE4F9955290E7EA200E16A1C /* APBaseViewController.swift in Sources */,
@@ -1041,8 +1045,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB0A27D126760B4FCE954A06 /* Pods-iKhokhaFruits.debug.xcconfig */;
 			buildSettings = {
-				API_PRODUCTS_IMAGES_URL = "gs://the-busy-shop.appspot.com";
-				API_PRODUCTS_URL = "https://the-busy-shop.firebaseio.com/";
+				API_PRODUCTS_IMAGES_URL = "https://firebasestorage.googleapis.com/v0/b/the-busy-shop.appspot.com/o/";
+				API_PRODUCTS_URL = "https://the-busy-shop.firebaseio.com/.json";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1054,8 +1058,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1077,8 +1081,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43E207F34BFBBBFA86DDAD83 /* Pods-iKhokhaFruits.release.xcconfig */;
 			buildSettings = {
-				API_PRODUCTS_IMAGES_URL = "gs://the-busy-shop.appspot.com";
-				API_PRODUCTS_URL = "https://the-busy-shop.firebaseio.com/";
+				API_PRODUCTS_IMAGES_URL = "https://firebasestorage.googleapis.com/v0/b/the-busy-shop.appspot.com/o/";
+				API_PRODUCTS_URL = "https://the-busy-shop.firebaseio.com/.json";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1090,8 +1094,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

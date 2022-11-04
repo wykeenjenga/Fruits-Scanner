@@ -48,8 +48,33 @@ class APFirebase {
         }
     }
     
-    func getAllProducts(completion: @escaping (Bool, Error?) -> Void){
-        
+    func getProductDetail(barCode: String, completion: @escaping (APProductsModel, Error?) -> Void){
+        let url = APAPIEndPoints.Requests.getProductsEndPoint()
+
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if error == nil{
+                do {
+                    if let data = data {
+                        if let json = String(data: data, encoding: .utf8) {
+                            let result = try JSONDecoder().decode([String: APProductsModel].self, from: data)
+                            for (key, value) in result {
+                                if key == barCode{
+                                    print("DATA IS>>>>>",key, value)
+                                    completion(value, nil)
+                                }
+                            }
+                            
+                            }
+                    }
+                } catch {
+                    print(error)
+                }
+            }else {
+                print(error ?? "fucking error occured")
+                return
+            }
+        }
+        task.resume()
     }
     
 }
